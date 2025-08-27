@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!---Navbar-->
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <ul class="nav">
+      <li class="has-subnav">
+        <a href="#">Features ▾</a>
+        <ul class="sub-nav">
+          <li onclick="openModalServices('accounting')"><a href="#">Accounting</a></li>
+          <li onclick="openModalServices('legal')"><a href="#">Legal</a></li>
+          <li onclick="openModalServices('invoice')"><a href="#">Invoicing</a></li>
+          <li onclick="openModalServices('expense')"><a href="#">Expenses</a></li>
+          <li onclick="openModalServices('bill')"><a href="#">Bill & Payments</a></li>
+          <li onclick="openModalServices('market')"><a href="#">Digital Marketing & SEO</a></li>
+        </ul>
+      </li>
+      <li class="has-subnav">
+        <a href="#">Services ▾</a>
+        <ul class="sub-nav">
+          <li onclick="openModal()"><a href="#">GST</a></li>
+          <li onclick="openModal()"><a href="#">Income Tax</a></li>
+          <li onclick="openModal()"><a href="#">Audit Files</a></li>
+          <li onclick="openModal()"><a href="#">Trade License</a></li>
+          <li onclick="openModal()"><a href="#">Logo Registration</a></li>
+          <!-- <li><a href="#">Digital Products</a></li> -->
+        </ul>
+      </li>
+      <!-- <li class="has-subnav">
+        <a href="#">Products ▾</a>
+        <ul class="sub-nav">
+          <li><a href="#">Kharchalu</a></li>
+          <li><a href="#">DMS</a></li>
+        </ul>
+      </li> -->
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li onclick="openModal()"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!---Navbar-->
+  <!-- Page Content -->
+  <!-- Slogan -->
+  <div class="content">
+    <div class="slogan">
+      <span class="typing first">Affordable services with</span>
+      <span class="typing second">care at your door</span>
+
+      <button class="custom-button" onclick="openModal()">
+        Enquiry Now
+      </button>
+
+      <p class="customer-tag">Customers and experts recommend</p>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <span class="carousel-item"><span class="rating-text">4.5 Excellent ⭐ ⭐ ⭐ ⭐</span><br> Ambuja Cement</span>
+          <span class="carousel-item"><span class="rating-text">3 Average ⭐ ⭐ ⭐</span><br> Poddar Hardware</span>
+          <span class="carousel-item"><span class="rating-text">2 Normal ⭐ ⭐ </span><br> Lenskart.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-image">
+      <img src="./images/navbackground.png" alt="Decorative Image" />
+    </div>
+    <!-- <marquee style="font-size: 20px; font-family: system-ui; font-weight: bold; padding: 0px 0px; color:#00FFFF; background-color: #00008B;"> -->
+      <!-- Important Notice: Last due date of income tax return on 25 September 2025. -->
+      <!-- Important Notice:&nbsp; Website under construction 🚧 -->
+    <!-- </marquee> -->
+  </div>
+  <!-- </section> -->
+
+  <!-- Modal Structure -->
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdpYV6xjpEnKheIk8pRriJ64t5ax__E3urR6BGePJRL7fKmwg/viewform?embedded=true"
+        width="640" height="1341" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+  <section class="features">
+    <p class="features-text">The <span class="features-symbol">services</span> you need. <br>All in one place.</p>
+    <div class="two-grid-section">
+      <div class="two-card-grid">
+        <div class="card">
+          <img src="./images/accounting.png" alt="Service 1">
+          <h3>Accounting</h3>
+          <p>Know where you stand in real-time with double entry accounting tools,
+            powerful financials reports, and easy access for your accountant.
+          </p>
+          <a href="#" class="card-button" onclick="openModalServices('accounting')">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/legal.png" alt="Service 1">
+          <h3>Legal</h3>
+          <p>Helping businesses and individuals navigate complex legal frameworks, minimize tax liabilities, and stay
+            compliant with ever-changing laws. Trusted advisor for audits, tax strategies.</p>
+          <a href="#" class="card-button" onclick="openModalServices('legal')">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/invoice.png" alt="Service 1">
+          <h3>Invoicing</h3>
+          <p>Create professional invoices in minutes, Automatically add tracked time and expense, calculate taxes, and
+            customize your payment options.</p>
+          <a href="#" class="card-button" onclick="openModalServices('invoice')">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/expense.png" alt="Service 1">
+          <h3>Expenses</h3>
+          <p>Keep track of your expenses with mobile receipt scanning,
+            bank accounting imports, and automated expense categorization.
+          </p>
+          <a href="#" class="card-button" onclick="openModalServices('expense')">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/billing.png" alt="Service 1">
+          <h3>Billing & Payments</h3>
+          <p>Bill fast, get paid even faster, and automate the rest with recurring invoices, online payments and late
+            payments reminders.</p>
+          <a href="#" class="card-button" onclick="openModalServices('bill')">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="./images/digital marketing.png" alt="Service 1">
+          <h3>Digital Marketing & SEO</h3>
+          <p>Passionate about turning clicks into customers through data-driven strategies and creative campaigns.
+            Helping businesses connect with their audience in the right place online.</p>
+          <a href="#" class="card-button" onclick="openModalServices('market')">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="formModalServices" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="about-us-text">About <span class="features-symbol">Us</span></h2>
+        <p>
+          We are a forward-thinking company committed to delivering innovative digital solutions that help our clients
+          grow, compete, and succeed.
+          With a team of experienced professionals, we combine creativity, strategy, and technology to build meaningful
+          products and experiences.
+        </p>
+        <p>
+          Our core values — integrity, innovation, and excellence — guide everything we do. Whether working with
+          startups or established enterprises,
+          we take pride in crafting tailored solutions that drive measurable results.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="./images/team.jpg" alt="About Us Image" />
+      </div>
+  </section>
+  <section class="growth-section" id="growth">
+    <div class="growth-container">
+      <p class="timeline-story">Timeline <span class="features-symbol">Story</span> </p>
+      <ul class="growth-timeline">
+        <li>
+          <span class="year">2025</span>
+          <div class="growth-detail">
+            <p class="timeline-tags">Connection in a Digital World</p>
+            <p>"In a time when everything shifted online, we made it our mission to stay connected. We embraced smarter tools, upgraded our systems, and brought our services into the digital space not to replace the human touch, but to enhance it."</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2015</span>
+          <div class="growth-detail">
+            <p class="timeline-tags">Community & Connection</p>
+            <p>"We focused on building lasting relationships with clients, partners, and our team. Each new connection shaped who we are today."</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2005</span>
+          <div class="growth-detail">
+            <p class="timeline-tags">A Bigger Home</p>
+            <p>"With growth came the need for more space. We moved into own office, not to impress, but to serve better. Still grounded, still grateful."</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">2000</span>
+          <div class="growth-detail">
+            <p class="timeline-tags">Growing Together</p>
+            <p>"With time and trust, more clients found their way to us."</p>
+          </div>
+        </li>
+        <li>
+          <span class="year">1995</span>
+          <div class="growth-detail">
+            <p class="timeline-tags">Foundation</p>
+            <p>"We started our journey in a small, rented office, serving just a handful of clients."</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- <p class="app-text"><span class="features-symbol">100+ apps.</span> <br>Infinite possibilities.</p> -->
+  <!-- <span class="below-apps">Fuel growth and save time with the AppStore.</span> -->
+  <!-- <div class="apps-layout">
+      <div class="side-logos left-logos">
+        <img src="app1.jpeg">
+        <img src="kharchalu.png">
+        <img src="app3.jpg">
+        <img src="app4.png">
+      </div>
+    </div> -->
+  </section>
+
+  <section class="office-pictures" id="gallery">
+    <div>
+      <p class="office-pictures">Gallery</p>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./images/room.jpg" alt="Workspace" />
+          <div class="overlay">Modern open workspace with collaborative zones.</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./images/office.jpg" alt="Conference Room" />
+          <div class="overlay">High-tech conference room for seamless meetings.</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./images/reciption.jpeg" alt="Reception" />
+          <div class="overlay">Elegant reception area with a warm welcome.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="frequently">
+    <section class="frequently">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">What is Logo?</button>
+          <div class="faq-answer">
+            <p>Logo is a business tool platform offering accounting, invoicing, and app integrations tailored for
+              small to medium businesses.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is there a free trial available?</button>
+          <div class="faq-answer">
+            <p>Yes, we offer a 14-day free trial with access to all features. No credit card required.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I integrate third-party apps?</button>
+          <div class="faq-answer">
+            <p>Yes, you can integrate over 100+ apps directly from our built-in AppStore for seamless workflow.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is my data secure?</button>
+          <div class="faq-answer">
+            <p>Absolutely. We use enterprise-grade security protocols to ensure your data is safe and encrypted at all
+              times.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Logo</h3>
+        <p>Empowering businesses with affordable tools. Everything you need, all in one place.</p>
+        <div class="map-responsive">
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d455.19757180855856!2d88.24696331558616!3d24.11624106349183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1756103002302!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d429.1607351251186!2d75.8881681440202!3d21.605397631245282!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1756278348977!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <!-- <li>
+            <a href="#">Features</a>
+            <ul class="submenu">
+              <li><a href="#">Accounting</a></li>
+              <li><a href="#">Invoicing</a></li>
+              <li><a href="#">Expenses Tracking</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Services</a></li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li onclick="openModal()"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-address">
+        <h4>Visit Our Office</h4>
+        <!-- <p>
+          Room No-12, 1st Floor<br />
+          Shree Krishan Appartment<br />
+          Gopalghat, Khagra, <br />
+          Berhampore, Murshidabad,<br />
+          West Bengal, 742103, India<br />
+        </p>
+        <p><b>Email:</b> info@kalyani.com</p>
+        <p><b>Phone:</b> +91 9732589814</p>
+        <p><b>Open:</b> Monday to Saturday (10:30AM to 5.00PM)</p>
+        <p><b>Sunday closed</b></p> -->
+        <p>
+          Room No-xx, xst Floor<br />
+          xxx Appartment<br />
+          xx, xx, <br />
+          xxxx, xxxx,<br />
+          xx xxxx, xxxx, xxxx<br />
+        </p>
+        <p><b>Email:</b> xxx@xxxx.com</p>
+        <p><b>Phone:</b> +91 xxxxxxxxxx</p>
+        <p><b>Open:</b> Monday to Saturday (10:30AM to 5.00PM)</p>
+        <p><b>Sunday closed</b></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Logo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
