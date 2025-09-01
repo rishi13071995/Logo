@@ -12,10 +12,15 @@
   <!---Navbar-->
   <nav class="navbar">
     <div class="logo">Logo</div>
-    <ul class="nav">
-      <li class="has-subnav">
-        <a href="#">Features ▾</a>
-        <ul class="sub-nav">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav" id="navMenu">
+      <li class="has-subnav navs">
+        <a href="#" onclick="hideSubMenu('featuresNavs')">Features ▾</a>
+        <ul class="sub-nav" id="featuresNavs">
           <li onclick="openModalServices('accounting')"><a href="#">Accounting</a></li>
           <li onclick="openModalServices('legal')"><a href="#">Legal</a></li>
           <li onclick="openModalServices('invoice')"><a href="#">Invoicing</a></li>
@@ -24,9 +29,9 @@
           <li onclick="openModalServices('market')"><a href="#">Digital Marketing & SEO</a></li>
         </ul>
       </li>
-      <li class="has-subnav">
-        <a href="#">Services ▾</a>
-        <ul class="sub-nav">
+      <li class="has-subnav navs" id="subNavs">
+        <a href="#" onclick="hideSubMenu('servicesNavs')">Services ▾</a>
+        <ul class="sub-nav" id="servicesNavs">
           <li onclick="openModal()"><a href="#">GST</a></li>
           <li onclick="openModal()"><a href="#">Income Tax</a></li>
           <li onclick="openModal()"><a href="#">Audit Files</a></li>
@@ -42,9 +47,9 @@
           <li><a href="#">DMS</a></li>
         </ul>
       </li> -->
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li onclick="openModal()"><a href="#">Contact</a></li>
+      <li class="navs"><a href="#about">About</a></li>
+      <li class="navs"><a href="#gallery">Gallery</a></li>
+      <li class="navs" onclick="openModal()"><a href="#">Contact</a></li>
     </ul>
   </nav>
   <!---Navbar-->

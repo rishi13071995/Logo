@@ -755,6 +755,7 @@ section {
 .gallery {
   column-count: 3;
   column-gap: 20px;
+  padding: 10px 10px;
 }
 
 .gallery-item {
@@ -1140,6 +1141,10 @@ section {
     width: 100%;
   }
 
+  .nav.show {
+    display: flex;
+  }
+
   .sub-nav {
     position: static;
     box-shadow: none;
@@ -1149,8 +1154,35 @@ section {
     padding-left: 20px;
   }
 
+  .nav {
+    display: none;
+  }
   .sub-nav li a {
     padding: 10px 0;
+  }
+
+  #navMenu.hide {
+    display: none !important;
+  }
+  .modal-content { 
+    margin-top: 30%;
+  }
+
+  .menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px;
+  }
+  
+  .menu-icon span {
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    display: block;
   }
 
   /* .has-subnav:hover .sub-nav {

@@ -128,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function openModal() {
+  this.hideMainMenu()
   document.getElementById('formModal').style.display = 'block';
 }
 
@@ -144,6 +145,7 @@ window.onclick = function (event) {
   }
 }
 function openModalServices(key) {
+  this.hideMainMenu()
   const data = modalData[key];
   if (!data) {
     console.error(`No modal content found for key: ${key}`);
@@ -157,6 +159,7 @@ function openModalServices(key) {
   `;
 
   document.getElementById('formModalServices').style.display = 'block';
+  
 }
 
 // Close modal when clicking outside the modal content
@@ -166,3 +169,50 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+function toggleMenu() {
+  this.closeModal()
+  const nav = document.getElementById('navMenu');
+  nav.classList.toggle('show');
+}
+
+function hideSubMenu(element = null) {
+  this.closeModal()
+  if (element !== null) {
+    const nav = document.getElementById(element);
+    if (nav.style.display === 'block') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'block';
+    }
+  } else {
+    const featureNav = document.getElementById('featuresNavs');
+    const serviceNav = document.getElementById('servicesNavs');
+    if (featureNav.style.display === 'block') {
+      featureNav.style.display = 'none';
+    } else {
+      featureNav.style.display = 'block';
+    }
+    if (serviceNav.style.display === 'block') {
+      serviceNav.style.display = 'none';
+    } else {
+      serviceNav.style.display = 'block';
+    }
+  } 
+}
+
+function hideMainMenu() {
+  const nav = document.getElementById('navMenu');
+  nav.classList.toggle('show');
+}
+
+// Optional: Toggle submenus on mobile
+document.querySelectorAll('.has-subnav > a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault(); // Prevent link jump
+      const parentLi = this.parentElement;
+      parentLi.classList.toggle('open');
+    }
+  });
+})
