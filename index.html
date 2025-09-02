@@ -19,37 +19,37 @@
     </div>
     <ul class="nav" id="navMenu">
       <li class="has-subnav navs">
-        <a href="#" onclick="hideSubMenu('featuresNavs')">Features ▾</a>
+        <a  onclick="hideSubMenu('featuresNavs')">Features ▾</a>
         <ul class="sub-nav" id="featuresNavs">
-          <li onclick="openModalServices('accounting')"><a href="#">Accounting</a></li>
-          <li onclick="openModalServices('legal')"><a href="#">Legal</a></li>
-          <li onclick="openModalServices('invoice')"><a href="#">Invoicing</a></li>
-          <li onclick="openModalServices('expense')"><a href="#">Expenses</a></li>
-          <li onclick="openModalServices('bill')"><a href="#">Bill & Payments</a></li>
-          <li onclick="openModalServices('market')"><a href="#">Digital Marketing & SEO</a></li>
+          <li onclick="openModalServices('accounting')"><a >Accounting</a></li>
+          <li onclick="openModalServices('legal')"><a >Legal</a></li>
+          <li onclick="openModalServices('invoice')"><a >Invoicing</a></li>
+          <li onclick="openModalServices('expense')"><a >Expenses</a></li>
+          <li onclick="openModalServices('bill')"><a >Bill & Payments</a></li>
+          <li onclick="openModalServices('market')"><a >Digital Marketing & SEO</a></li>
         </ul>
       </li>
       <li class="has-subnav navs" id="subNavs">
-        <a href="#" onclick="hideSubMenu('servicesNavs')">Services ▾</a> 
+        <a  onclick="hideSubMenu('servicesNavs')">Services ▾</a> 
         <ul class="sub-nav" id="servicesNavs">
-          <li onclick="openModal()"><a href="#">GST</a></li>
-          <li onclick="openModal()"><a href="#">Income Tax</a></li>
-          <li onclick="openModal()"><a href="#">Audit Files</a></li>
-          <li onclick="openModal()"><a href="#">Trade License</a></li>
-          <li onclick="openModal()"><a href="#">Logo Registration</a></li>
-          <!-- <li><a href="#">Digital Products</a></li> -->
+          <li onclick="openModal()"><a >GST</a></li>
+          <li onclick="openModal()"><a >Income Tax</a></li>
+          <li onclick="openModal()"><a >Audit Files</a></li>
+          <li onclick="openModal()"><a >Trade License</a></li>
+          <li onclick="openModal()"><a >Logo Registration</a></li>
+          <!-- <li><a >Digital Products</a></li> -->
         </ul>
       </li>
       <!-- <li class="has-subnav">
-        <a href="#">Products ▾</a>
+        <a >Products ▾</a>
         <ul class="sub-nav">
-          <li><a href="#">Kharchalu</a></li>
-          <li><a href="#">DMS</a></li>
+          <li><a >Kharchalu</a></li>
+          <li><a >DMS</a></li>
         </ul>
       </li> -->
       <li class="navs"><a href="#about">About</a></li>
       <li class="navs"><a href="#gallery">Gallery</a></li>
-      <li class="navs" onclick="openModal()"><a href="#">Contact</a></li>
+      <li class="navs" onclick="openModal()"><a >Contact</a></li>
     </ul>
   </nav>
   <!---Navbar-->
@@ -103,21 +103,21 @@
           <p>Know where you stand in real-time with double entry accounting tools,
             powerful financials reports, and easy access for your accountant.
           </p>
-          <a href="#" class="card-button" onclick="openModalServices('accounting')">Learn More</a>
+          <a  class="card-button" onclick="openModalServices('accounting')">Learn More</a>
         </div>
         <div class="card">
           <img src="./images/legal.png" alt="Service 1">
           <h3>Legal</h3>
           <p>Helping businesses and individuals navigate complex legal frameworks, minimize tax liabilities, and stay
             compliant with ever-changing laws. Trusted advisor for audits, tax strategies.</p>
-          <a href="#" class="card-button" onclick="openModalServices('legal')">Learn More</a>
+          <a  class="card-button" onclick="openModalServices('legal')">Learn More</a>
         </div>
         <div class="card">
           <img src="./images/invoice.png" alt="Service 1">
           <h3>Invoicing</h3>
           <p>Create professional invoices in minutes, Automatically add tracked time and expense, calculate taxes, and
             customize your payment options.</p>
-          <a href="#" class="card-button" onclick="openModalServices('invoice')">Learn More</a>
+          <a  class="card-button" onclick="openModalServices('invoice')">Learn More</a>
         </div>
         <div class="card">
           <img src="./images/expense.png" alt="Service 1">
@@ -125,21 +125,21 @@
           <p>Keep track of your expenses with mobile receipt scanning,
             bank accounting imports, and automated expense categorization.
           </p>
-          <a href="#" class="card-button" onclick="openModalServices('expense')">Learn More</a>
+          <a  class="card-button" onclick="openModalServices('expense')">Learn More</a>
         </div>
         <div class="card">
           <img src="./images/billing.png" alt="Service 1">
           <h3>Billing & Payments</h3>
           <p>Bill fast, get paid even faster, and automate the rest with recurring invoices, online payments and late
             payments reminders.</p>
-          <a href="#" class="card-button" onclick="openModalServices('bill')">Learn More</a>
+          <a  class="card-button" onclick="openModalServices('bill')">Learn More</a>
         </div>
         <div class="card">
           <img src="./images/digital marketing.png" alt="Service 1">
           <h3>Digital Marketing & SEO</h3>
           <p>Passionate about turning clicks into customers through data-driven strategies and creative campaigns.
             Helping businesses connect with their audience in the right place online.</p>
-          <a href="#" class="card-button" onclick="openModalServices('market')">Learn More</a>
+          <a class="card-button" onclick="openModalServices('market')">Learn More</a>
         </div>
 
       </div>
@@ -149,7 +149,9 @@
   <div id="formModalServices" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <div id="modal-body"></div>
+      <div id="modal-body">
+
+      </div>
     </div>
   </div>
   <section class="about-section" id="about">
@@ -300,17 +302,17 @@
         <h4>Quick Links</h4>
         <ul>
           <!-- <li>
-            <a href="#">Features</a>
+            <a >Features</a>
             <ul class="submenu">
-              <li><a href="#">Accounting</a></li>
-              <li><a href="#">Invoicing</a></li>
-              <li><a href="#">Expenses Tracking</a></li>
+              <li><a >Accounting</a></li>
+              <li><a >Invoicing</a></li>
+              <li><a >Expenses Tracking</a></li>
             </ul>
           </li>
-          <li><a href="#">Services</a></li> -->
+          <li><a >Services</a></li> -->
           <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li onclick="openModal()"><a href="#">Contact</a></li>
+          <li onclick="openModal()"><a >Contact</a></li>
         </ul>
       </div>
 

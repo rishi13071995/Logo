@@ -1,52 +1,118 @@
 const modalData = {
   accounting: {
-    title: "What is Accounting?",
+    title: "Accounting",
     content: `
-      <p>Accounting is the process of recording, summarizing, and reporting financial transactions 
-      of a business. It helps organizations track their income, expenses, assets, and liabilities.</p>
-      <p>The core purposes of accounting include:</p>
+      <p>We provide different types of accounting services.</p>
+      <p>Check below for more details:</p>
       <ul>
-        <li><strong>Financial Accounting</strong> – external reporting</li>
-        <li><strong>Managerial Accounting</strong> – internal decision-making</li>
-        <li><strong>Tax Accounting</strong> – compliance with tax laws</li>
-        <li><strong>Auditing</strong> – verification of financial statements</li>
+        <li>
+          <strong>Income Tax Returns</strong><br>
+          <ul>
+            <li>
+              <strong>ITR-1
+              </strong>
+              - It's for salary employees.
+            </li>
+            <br>
+            <li>
+              <strong>ITR-2
+              </strong>
+              - It's for salary employees with gains.
+            </li>
+            <br>
+            <li>
+              <strong>ITR-3
+              </strong>
+              - It's for business persons who doe's not meet audit.
+            </li>
+            <br>
+            <li>
+              <strong>ITR-4
+              </strong>
+              - It's for business persons who have audit file.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li>
+          <strong>Good & Service Tax</strong> <br>
+          <ul>
+            <li>
+            <strong>GSTR-1</strong>
+            - Filed by regular taxpayers to report details of their outward supplies (sales).
+            <br>
+            </li>
+            <li>
+            <strong>GSTR-3B</strong>
+            - A monthly self-declaration form for regular taxpayers to provide a summary of outward supplies, input tax credit (ITC) claims, and tax payments.
+            </li>
+            <br>
+            <li>
+            <strong>GSTR-4</strong>
+            - An annual return for taxpayers who have opted for the Composition Scheme. These are typically small businesses with an annual turnover up to ₹1.5 crore.
+            </li>
+            <br>
+            <li>
+            <strong>GSTR-9</strong>
+            - The annual return for regular taxpayers, consolidating all monthly or quarterly returns filed during the financial year.
+            </li>
+          </ul>
+        </li>
+        <br>
+        <li><strong>Audit</strong> - verification of financial statements</li>
       </ul>
     `
   },
   legal: {
-    title: "What is Tax?",
+    title: "Legal",
     content: `
-      <p>Tax is a mandatory financial charge imposed by governments on individuals or businesses 
-      to fund public services and infrastructure.</p>
-      <p>Common types of taxes include:</p>
+      <p>We provide different types of legal services.</p>
+      <p>Check below for more details:</p>
       <ul>
-        <li>Income Tax</li>
-        <li>Sales Tax</li>
-        <li>Corporate Tax</li>
-        <li>Property Tax</li>
+        <li>
+          <strong>Constitutional Law</strong>
+          - Deals with the interpretation and application of the Constitution of India, guaranteeing fundamental rights and personal liberty.
+        </li>
+        <br>
+        <li><strong>Criminal Law</strong>
+        - Addresses offenses against individuals and society, with specific laws governing issues like offenses against women and children, as well as corruption and terrorism. 
+        </li>
+        <br>
+        <li><strong>Civil Law</strong>
+        - Focuses on disputes between individuals or entities, covering various matters like commercial issues, property, and contract disputes. 
+        </li>
+        <br>
+        <li><strong>Family/Personal Law</strong>
+        - Manages matters related to family, including marriage, divorce, and inheritance, which can be complex due to religious and customary laws. 
+        </li>
+        <br>
+        <li><strong>Corporate Law</strong>
+        - Governs companies, their formation, operations, and compliance with regulations. 
+        </li>
       </ul>
     `
   },
   invoice: {
-    title: "What is Invoice?",
+    title: "Invoicing",
     content: `
-      <p>Tax is a mandatory financial charge imposed by governments on individuals or businesses 
-      to fund public services and infrastructure.</p>
-      <p>Common types of taxes include:</p>
+    <p>We provide digital or manual invoice services.</p>
+    <p>Check below for more details:</p>
       <ul>
-        <li>Income Tax</li>
-        <li>Sales Tax</li>
-        <li>Corporate Tax</li>
-        <li>Property Tax</li>
+        <li><strong>Manual Service</strong>
+        - We provide support of manual invoice generation.
+        </li>
+        <br>
+        <li><strong>Digital Service</strong>
+        - We provide digital app for automatic inovice generation. Based on requirements we designed digital invoicing.
+        </li>
       </ul>
     `
   },
   expense: {
-    title: "What is Expense?",
+    title: "Expenses",
     content: `
-      <p>Tax is a mandatory financial charge imposed by governments on individuals or businesses 
-      to fund public services and infrastructure.</p>
-      <p>Common types of taxes include:</p>
+    <p>We provide.</p>
+    <p>Check below for more details:</p>
       <ul>
         <li>Income Tax</li>
         <li>Sales Tax</li>

@@ -143,6 +143,8 @@ body {
   max-width: 700px;
   height: 80%;
   position: relative;
+  overflow-x: auto;
+  /* white-space: nowrap;  */
 }
 
 .close {
