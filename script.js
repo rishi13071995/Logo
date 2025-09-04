@@ -111,41 +111,79 @@ const modalData = {
   expense: {
     title: "Expenses",
     content: `
-    <p>We provide.</p>
+    <p>We provide online expense tracking application.</p>
     <p>Check below for more details:</p>
       <ul>
-        <li>Income Tax</li>
-        <li>Sales Tax</li>
-        <li>Corporate Tax</li>
-        <li>Property Tax</li>
+        <li><strong>Kharchalu</strong> - Expense Tracker Mobile App</li>
+        <img class="kharchalu_mobile" src="./images/kharchalu_mobile.png">
+        <p class="kharchalu_paragraph">In today's digital age, managing your daily data usage is essential to avoid unexpected charges or running out of data before the end of the month. However, if you're concerned about your data privacy or don't want to rely on online tools, there are ways to manage your data usage offline and for free.</p>
+        <p class="kharchalu_paragraph">One option is to use a spreadsheet to track your daily data usage and calculate your total usage for the month. Another option is to use kharchalu app available for Android, which allows you to set alerts when you reach a certain threshold. You can also use your phone's built-in data tracking features or monitor your usage manually.</p>
+        <p class="kharchalu_paragraph">By taking control of your data usage offline and for free, you can avoid unwanted charges and maintain your privacy with confidence.</p>
       </ul>
     `
   },
   bill: {
-    title: "What is Bill?",
+    title: "Billing & Payments",
     content: `
-      <p>Tax is a mandatory financial charge imposed by governments on individuals or businesses 
-      to fund public services and infrastructure.</p>
-      <p>Common types of taxes include:</p>
+      <p class="kharchalu_paragraph">
+      Our Billing & Payment Application is a powerful, user-friendly solution designed to streamline your financial operations. Whether you're a small business, freelancer, or enterprise, our platform makes it easy to generate invoices, accept payments, track expenses, and manage transactions - all in one place.
+      </p>
+      <p>Check below for more details:</p>
       <ul>
-        <li>Income Tax</li>
-        <li>Sales Tax</li>
-        <li>Corporate Tax</li>
-        <li>Property Tax</li>
-      </ul>
+        <li><strong>Smart Billing</strong>
+        - Customize invoice templates with your branding.
+        </li>
+        <br>
+        <li><strong>Seamless Payments</strong>
+        - Accept payments via credit/debit cards, UPI, net banking & wallets.
+        </li>
+        <br>
+        <li><strong>Customer Management</strong>
+        - Track customer payment history, Send reminders and payment follow-ups.
+        </li>
+        <br>
+        <li><strong>Security & Compliance</strong>
+        - GST-compliant invoicing (for India), Audit-ready reports.
+        </li>
+      <ul>
+      <p class="note-text"><strong>Note</strong>:- Application work in progress release soon. </p>
+
     `
   },
   market: {
-    title: "What is Bill?",
+    title: "Digital Marketing & SEO",
     content: `
-      <p>Tax is a mandatory financial charge imposed by governments on individuals or businesses 
-      to fund public services and infrastructure.</p>
-      <p>Common types of taxes include:</p>
+      <p class="kharchalu_paragraph">Take your business to the next level with our expert digital marketing and SEO services. We help brands grow online, reach their target audience, and convert clicks into customers.</p>
+      <p>Check below for more details:</p>
       <ul>
-        <li>Income Tax</li>
-        <li>Sales Tax</li>
-        <li>Corporate Tax</li>
-        <li>Property Tax</li>
+        <li><strong>On-Page SEO</strong>
+        - Meta tags, keyword optimization, content structure.
+        </li>
+        <br>
+        <li><strong>Off-Page SEO</strong>
+        - Link building, guest posting, citations.
+        </li>
+        <br>
+        <li><strong>Technical SEO</strong>
+        - Site speed, mobile-friendliness, schema markup.
+        </li>
+        <br>
+        <li><strong>Local SEO</strong>
+        - Google Business Profile optimization.
+        </li>
+        <br>
+        <li><strong>SEO audits & competitor analysis</strong></li><br>
+        <li><strong>Social Media Marketing (SMM)</strong>
+        - Content creation & scheduling, Ad campaigns & audience targeting.
+        </li>
+        <br>
+        <li><strong>Content Marketing</strong>
+        - Blog writing & publishing, Website copywriting, Video content & scripts.
+        </li>
+        <br>
+        <li><strong>Website Optimization</strong>
+        - Mobile responsiveness, Speed optimization, User experience (UX) enhancements, Landing page design for conversions
+        </li>
       </ul>
     `
   }
@@ -160,6 +198,12 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('scrolled');
   }
 })
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.getElementById('hamburger');
@@ -210,8 +254,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-function openModalServices(key) {
-  this.hideMainMenu()
+function openModalServices(key, type) {
+  if (type === 'nav') {
+    this.hideMainMenu()
+  }
   const data = modalData[key];
   if (!data) {
     console.error(`No modal content found for key: ${key}`);
