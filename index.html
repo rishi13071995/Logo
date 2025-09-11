@@ -23,10 +23,14 @@
         <ul class="sub-nav" id="featuresNavs">
           <li onclick="openModalServices('accounting', 'nav')"><a >Accounting</a></li>
           <li onclick="openModalServices('legal', 'nav')"><a >Legal</a></li>
-          <li onclick="openModalServices('invoice', 'nav')"><a >Invoicing</a></li>
-          <li onclick="openModalServices('expense', 'nav')"><a >Expenses</a></li>
-          <li onclick="openModalServices('bill', 'nav')"><a >Bill & Payments</a></li>
-          <li onclick="openModalServices('market', 'nav')"><a >Digital Marketing & SEO</a></li>
+          <!-- <li onclick="openModalServices('invoice', 'nav')"><a >Invoicing</a></li> -->
+          <li><a >Invoicing <small class="coming-soon">coming soon*</small></a></li>
+          <!-- <li onclick="openModalServices('expense', 'nav')"><a >Expenses</a></li> -->
+          <li><a >Expenses <small class="coming-soon">coming soon*</small></a></li>
+          <!-- <li onclick="openModalServices('bill', 'nav')"><a >Bill & Payments</a></li> -->
+          <li><a >Bill & Payments <small class="coming-soon">coming soon*</small></a></li>
+          <!-- <li onclick="openModalServices('market', 'nav')"><a >Digital Marketing & SEO</a></li> -->
+          <li><a >Digital Marketing & SEO <small class="coming-soon">coming soon*</small></a></li>
         </ul>
       </li>
       <li class="has-subnav navs" id="subNavs">
@@ -117,7 +121,11 @@
           <h3>Invoicing</h3>
           <p>Create professional invoices in minutes, Automatically add tracked time and expense, calculate taxes, and
             customize your payment options.</p>
-          <a  class="card-button" onclick="openModalServices('invoice', 'ord')">Learn More</a>
+          <!-- <a  class="card-button" onclick="openModalServices('invoice', 'ord')">Learn More</a> -->
+          <a class="card-button">Learn More</a>
+          <div class="card-overlay">
+            <div class="overlay-message">Coming soon</div>
+          </div>
         </div>
         <div class="card">
           <img src="./images/expense.png" alt="Service 1">
@@ -125,21 +133,33 @@
           <p>Keep track of your expenses with mobile receipt scanning,
             bank accounting imports, and automated expense categorization.
           </p>
-          <a  class="card-button" onclick="openModalServices('expense', 'ord')">Learn More</a>
+          <!-- <a  class="card-button" onclick="openModalServices('expense', 'ord')">Learn More</a> -->
+          <a class="card-button">Learn More</a>
+          <div class="card-overlay">
+            <div class="overlay-message">Coming soon</div>
+          </div>
         </div>
         <div class="card">
           <img src="./images/billing.png" alt="Service 1">
           <h3>Billing & Payments</h3>
           <p>Bill fast, get paid even faster, and automate the rest with recurring invoices, online payments and late
             payments reminders.</p>
-          <a  class="card-button" onclick="openModalServices('bill', 'ord')">Learn More</a>
+          <!-- <a  class="card-button" onclick="openModalServices('bill', 'ord')">Learn More</a> -->
+          <a class="card-button">Learn More</a>
+          <div class="card-overlay">
+            <div class="overlay-message">Coming soon</div>
+          </div>
         </div>
         <div class="card">
           <img src="./images/digital marketing.png" alt="Service 1">
           <h3>Digital Marketing & SEO</h3>
           <p>Passionate about turning clicks into customers through data-driven strategies and creative campaigns.
             Helping businesses connect with their audience in the right place online.</p>
-          <a class="card-button" onclick="openModalServices('market', 'ord')">Learn More</a>
+          <!-- <a class="card-button" disabled onclick="openModalServices('market', 'ord')">Learn More</a> -->
+          <a class="card-button">Learn More</a>
+          <div class="card-overlay">
+            <div class="overlay-message">Coming soon</div>
+          </div>
         </div>
 
       </div>
